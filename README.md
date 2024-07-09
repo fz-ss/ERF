@@ -17,6 +17,7 @@
 (a):image, (b):GT, (c):DAFormer, (d):DAFormer+ERF, (e):MIC, (f):MIC+ERF
 
 **Synthia——>Cityscapes**
+
 <img src = "images\tab4.png" width="600px">
 
 
