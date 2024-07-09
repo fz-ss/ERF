@@ -16,6 +16,8 @@
 
 (a):image, (b):GT, (c):DAFormer, (d):DAFormer+ERF, (e):MIC, (f):MIC+ERF
 
+
+
 **Synthia——>Cityscapes**
 
 
