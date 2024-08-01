@@ -155,9 +155,9 @@ classes. As the Iou for the 3 missing classes is 0, you can do the conversion
 `mIoU16 = mIoU19 * 19 / 16`.
 
 
-## Checkpoints
+## Models
 
-Below, we provide checkpoints of ERF for different benchmarks.
+Below, we provide checkpoints of ERF for different benchmarks.Models
 We provide the checkpoint with the median validation performance here.
 
 * [One Drive](https://onedrive.live.com/?id=2D168DA887100C7A%21sfb20426bf8004cf9a626ae6cba551e03&cid=2D168DA887100C7A)
