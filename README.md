@@ -1,4 +1,4 @@
-# ERF: Extend Receptive Field UDA Semantic Segmentation
+# Urban Scene UDA Semantic Segmentation based on Continuous Features and Multi-modal Information
 <img src = "images\fig2.png" width="800px">     
 
 
