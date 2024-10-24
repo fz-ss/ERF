@@ -2,7 +2,7 @@
 <img src = "images\fig2.png" width="800px">     
 
 
-## Our results
+## Our results(ERF)
 **Analysis of FLOPs and Params**
 
 <img src = "images\tab2.png" width="600px">
