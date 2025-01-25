@@ -1,4 +1,4 @@
-# Urban Scene UDA Semantic Segmentation based on Continuous Features and Multi-modal Information
+# Extended Receptive Field UDA Semantic Segmentation based on Spatial Alignment and Knowledge Distillation
 <img src = "images\fig2.png" width="800px">     
 
 
