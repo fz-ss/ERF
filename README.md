@@ -162,6 +162,7 @@ We provide the checkpoint with the median validation performance here.
 
 * [Baidu desk](https://pan.baidu.com/s/1sG9uu1RewrpRISyggPEQhg?pwd=bgdi), 提取码: bgdi.
 * [One Drive](https://onedrive.live.com/?id=2D168DA887100C7A%21sfb20426bf8004cf9a626ae6cba551e03&cid=2D168DA887100C7A)
+* [Google Driver](https://drive.google.com/drive/folders/1WVuyAfEpwpX4y1TbqXxFquLq3NY6g_WG?usp=drive_link)
 
 
 ## Framework Structure
