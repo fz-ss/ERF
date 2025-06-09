@@ -413,28 +413,28 @@ class EncoderDecoder(BaseSegmentor):
 
         return output
 
-    # def simple_test(self, img, img_meta, rescale=True):
-    #     """Simple test with single image."""
-    #     seg_logit = self.inference(img, img_meta, rescale)
-    #     if hasattr(self.decode_head, 'debug_output_attention') and \
-    #             self.decode_head.debug_output_attention:
-    #         seg_pred = seg_logit[:, 0]
-    #     else:
-    #         seg_pred = seg_logit.argmax(dim=1)
-    #     if torch.onnx.is_in_onnx_export():
-    #         # our inference backend only support 4D output
-    #         seg_pred = seg_pred.unsqueeze(0)
-    #         return seg_pred
-    #     seg_pred = seg_pred.cpu().numpy()
-    #     # unravel batch dim
-    #     seg_pred = list(seg_pred)
-    #     return seg_pred
-    
     def simple_test(self, img, img_meta, rescale=True):
         """Simple test with single image."""
         seg_logit = self.inference(img, img_meta, rescale)
+        if hasattr(self.decode_head, 'debug_output_attention') and \
+                self.decode_head.debug_output_attention:
+            seg_pred = seg_logit[:, 0]
+        else:
+            seg_pred = seg_logit.argmax(dim=1)
+        if torch.onnx.is_in_onnx_export():
+            # our inference backend only support 4D output
+            seg_pred = seg_pred.unsqueeze(0)
+            return seg_pred
+        seg_pred = seg_pred.cpu().numpy()
+        # unravel batch dim
+        seg_pred = list(seg_pred)
+        return seg_pred
+    
+    # def simple_test(self, img, img_meta, rescale=True):
+    #     """Simple test with single image."""
+    #     seg_logit = self.inference(img, img_meta, rescale)
 
-        return seg_logit
+    #     return seg_logit
 
     def aug_test(self, imgs, img_metas, rescale=True):
         """Test with augmentations.
